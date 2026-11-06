@@ -1,0 +1,43 @@
+name: solar_safe_smart_station
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_dotenv: ^6.0.0
+  flutter_local_notifications: ^19.5.0
+  shared_preferences: ^2.5.5
+  web: ^1.1.1
+  supabase_flutter: ^2.12.0
+  video_player: ^2.14.1
+
+dev_dependencies:
+  http: ^1.6.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - design/mobile/logo.png
+    - assets/mascota/
+    - assets/animations/
+    - design/logos_temperatura/
+    - assets/fonts/Manrope-OFL.txt
+    - assets/fonts/JetBrainsMono-OFL.txt
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope.ttf
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono.ttf
